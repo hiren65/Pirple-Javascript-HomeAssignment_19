@@ -1,0 +1,76 @@
+body{
+    font-size: 62.5%;
+    background-color: bisque;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-auto-rows: 160px auto auto auto ;
+    row-gap: 5px;
+    margin-top: 0;
+    border: 1px solid black;
+}
+#b1{
+
+    background-color: #d7e9cc;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: block;margin-top: 0;
+    background-image: url("img/brunch-napkin.svg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    color: green;
+    font-size: 1.4rem;
+    //border: 1px solid black;
+}
+h2{
+    text-align: center;
+    color: darkseagreen;
+}
+#b2{
+    width: 60%;
+    min-height: 450px;
+    background-color: gold;
+    display: block;
+    margin: 0 auto 0 auto;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#b3{
+    width: 100%;
+    grid-column: 1/2;
+    min-height: 120px;
+    background-color: black;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+#b4{
+    width: 10%;
+    height: 100px;
+    background-color: crimson;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-right: auto;
+    margin-left: 9%;
+
+}
+#b5{
+    width: 10%;
+    height: 100px;
+    background-color: crimson;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-right: 9%;
+    margin-left: auto;
+}
+#sl0{
+    font-size: 1.5rem;
+    color: darkslateblue;
+}
