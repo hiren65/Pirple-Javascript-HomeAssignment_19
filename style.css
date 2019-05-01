@@ -59,6 +59,7 @@ h2{
     grid-row: 2/3;
     margin-right: auto;
     margin-left: 9%;
+    display: inline-block;
 
 }
 #b5{
@@ -73,4 +74,39 @@ h2{
 #sl0{
     font-size: 1.5rem;
     color: darkslateblue;
+}
+#btnF{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 70%;
+    margin-top:35px ;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 3px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+#btnR{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 70%;
+    margin-top:35px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 3px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p{
+    font-size: 1.4rem;
+    color: black;
+    padding: 5px;
+    margin-left: 5px;
 }
