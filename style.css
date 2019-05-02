@@ -110,3 +110,42 @@ p{
     padding: 5px;
     margin-left: 5px;
 }
+.slideTitle{
+    font-size: 1.4rem;
+    color: crimson;
+ }
+h3{
+    text-align: center;
+    color: crimson;
+    font-size: 1.4rem;
+}
+#next{
+    background-color: crimson;
+    color: #d7e9cc;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.simple{
+    font-size: 1.2rem;
+    color: black;
+}
+.slideTitle1{
+    font-size: 1.4rem;
+    color: #1d6c18;
+}
+pre{
+    background-color: darkkhaki;
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 10px;
+
+    //background: gainsboro;
+    //padding: 5px 5px 5px 5px;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
+}

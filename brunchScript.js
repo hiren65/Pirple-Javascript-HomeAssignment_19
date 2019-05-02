@@ -1,7 +1,7 @@
 //alert();
 let slider = document.getElementById("b2");
-let sld1,sld2,sld3,sld0;
-arr = [sld1,sld2,sld3];
+let sld1,sld2,sld3,sld0,sld4,sld5;
+arr = [sld1,sld2,sld3,sld4];
 let count = 0;
 sld0 = `
                      <h2 id="sl0"> Why uses Brunch?</h2>
@@ -53,9 +53,73 @@ sld3  = `
           very satisfied with Brunch, but can’t wait to see what the future holds in terms of 
           new and improved build tools.
           </p>
+          <h3>BRUNCH Official Documantation</h3>
+          <p>Official Site : <a href="https://brunch.io/">https://brunch.io/</a></p>
+          <P>Brunch is much simpler to set and use. Brunch is able to provide a smooth
+             and fast experience, and makes your config files take a drastic cut.</P>
+             <div id="next" >Next</div>
+       `;
+
+sld4 = `
+          <h2 class="slideTitle1"> In Brunch the configs are much simpler</h2>
+          <div>
+               <h3> It doesn't take much to get around with brunch:</h3>
+               <p>Three simple commands</p>
+               <ul>
+                   <li class="simple">brunch new to create a new project</li>
+                   <li class="simple">brunch build to build</li>
+                   <li class="simple">brunch watch to live-compile</li>
+               </ul>
+               <p>Brunch was built with two things in mind: speed and simplicity.</p>
+               <p>You will find that the typical config of a Brunch application is an order of magnitude simpler, 
+                  compared to Webpack, Grunt, or Gulp.</p>
+               <p>Besides configs, brunch is also simpler in terms of commands. Grunt / Gulp 
+                  commands replicate all plugins it loads. Brunch always has three commands: new, 
+                  build and watch. Build / watch commands may receive optional production flag 
+                  which will tell Brunch to optimize assets, javascripts and stylesheets.</p>   
+          </div>
+          <div id="next" >Next</div>
+       `;
+sld5 = `  
+          <h2 class="slideTitle">Testing Brunch</h2>
+          <div>
+          <ul>
+          <li class="simple simple1">
+               First you need to installed Node.js
+          </li>
+          <li class="simple simple1">
+               Now install Brunch
+               <pre>
+               $ npm install -g brunch
+               </pre>
+          </li>
+          <li class="simple simple1">
+               brunch new helps to init new Brunch project from one of community-provided 
+               skeletons. The popular "ES6 skeleton" may sound scary, but it's actually very 
+               modern and nice. Let's try to create a new app from it!
+               <pre>
+                $ brunch new proj -s es6 
+               </pre>
+          </li>
+          <li class="simple simple1">
+               in your shell prompt. Executing the command will:
+               Create directory proj
+               Clone git repo git://github.com/brunch/with-es6.git to the dir. The Git URL is 
+               basically full name of our "es6" skeleton.
+               Run npm install to install app dependencies and brunch plugins
+               After the project is created, let's try to build it:
+               <pre>
+                $ brunch build
+                  01 Apr 10:45:30 - info: compiled initialize.js into app.js, copied index.html in 857ms
+               </pre>
+          </li>
+          
+          </ul>
+          </div>
+          <div id="next" >Next</div>  
        `;
 slider.innerHTML = sld0;
-arr = [sld0,sld1,sld2,sld3];
+arr = [sld0,sld1,sld2,sld3,sld4,sld5];
 let ff = document.getElementById("btnF");
 ff.addEventListener("click",forward);
 function forward() {
@@ -65,8 +129,38 @@ function forward() {
     count++;
     console.log(count);
     slider.innerHTML = arr[count];
+    if (count>2){
+        let next = document.getElementById("next");
+        next.addEventListener("click",forward);
+    }
+
 }
 
 function createSlideShow(){
 
 }
+
+function goNext1() {
+    count = count+1;
+    //alert(count);
+    slider.innerHTML = arr[count];
+
+}
+
+
+
+
+
+/////
+function special(){
+    let next = document.getElementById("next");
+    next.addEventListener("click",goNext1);
+    function goNext1() {
+        count = count+1;
+        //alert(count);
+        slider.innerHTML = arr[count];
+
+    }
+}
+
+
