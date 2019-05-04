@@ -1,5 +1,7 @@
 //alert();
+let setT = 0;
 let slider = document.getElementById("b2");
+var internalID;
 let sld1,sld2,sld3,sld0,sld4,sld5,sld6,sld7;
 arr = [sld1,sld2,sld3,sld4,sld5,sld6,sld7];
 let count = 0;
@@ -14,6 +16,7 @@ sld0 = `
                         build tools.
                      </p>
                    `;
+
 sld1 = `
                 <h2 class="slideTitle">Grunt</h2>
                 <p>
@@ -83,6 +86,7 @@ sld4 = `
           </div>
           <div id="next" >Next</div>
        `;
+
 sld5 = `  
           <h2 class="slideTitle">Testing Brunch</h2>
           <div class="inner">
@@ -121,6 +125,7 @@ sld5 = `
           </div>
           <div id="next" >Next</div>  
        `;
+
 sld6 = `
           <h2 class="slideTitle">What is ready in the Brunch Platter?</h2>
           <div class="inner">
@@ -153,6 +158,7 @@ sld6 = `
           </div>
           <div id="next" >Next</div> 
        `;
+
 sld7 = `
           <h2 class="slideTitle">Let's inspect files in public to understand what happened at this point:</h2>
           <div class="inner">
@@ -216,29 +222,105 @@ function reverse() {
     }
 }
 
-function createSlideShow(){
+let timer11 = document.getElementById("start");
+timer11.addEventListener("click",createAutoSlideShow);
 
+//////
+function createAutoSlideShow(){
+    //alert();
+    myFunction();
 }
 
+
+let timerStop = document.getElementById("stop");
+timerStop.addEventListener("click",stopTimeInterval);
+
+
+function stopTimeInterval() {
+    console.log("stop "+count);
+    clearInterval(internalID);
+    internalID = null;
+}
+///
+let inputList = document.getElementById("listBox");
+let v1 = inputList.value = "Get Value";
+let v2;
+inputList.addEventListener("click",function () {
+    inputList.value = "";
+});
+///
+function myFunction() {
+    v1 = inputList.value;
+    v2 = parseInt(v1,10);
+    //alert("find v2"+ v2);
+    if (typeof v2 !== "number" || v2<1000 || isNaN(v2)){
+        alert("wrong input or less than 1000 ");
+        return;
+    }
+    internalID = setInterval(function () {
+        //alert("hello");
+
+        goNext1();
+        console.log("counttt "+count);
+    },parseInt(v1,10));
+}
+
+
+
+
 function goNext1() {
+    if (count === arr.length-1){
+        count = -1;
+    }
     count = count+1;
+    slideNumber.innerHTML = `${count} `;
     //alert(count);
     slider.innerHTML = arr[count];
 
 }
 
 
+////////////////////////////////////////////////////
+/*let autoTimer = document.getElementById("timer");
+//autoTimer.addEventListener("click",setTimer);
+function setTimer(){
 
-/////
-function special(){
-    let next = document.getElementById("next");
-    next.addEventListener("click",goNext1);
-    function goNext1() {
-        count = count+1;
-        //alert(count);
-        slider.innerHTML = arr[count];
-
+    if (setT === 0){
+        //v1 = inputList.value;
+        //v2 = parseInt(v1,10);
+        //alert("find v2"+ v2);
+        /!*if (typeof v2 !== "number" || v2<1000 || isNaN(v2)){
+            alert("wrong input or less than 1000 ");
+            return;
+        }*!/
+        //alert(parseInt(v2,10));
+        //autoTimer.innerText= "Stop";
+        setT = 1;
+        myFunction1();
+        return;
     }
+    if (setT === 1){
+        myStopFunction();
+        //autoTimer.innerText= "Play Slides";
+        setT = 0;
+        return;
+    }
+
 }
+
+//create time interval for auto sliders
+var myVar;
+
+function myFunction1() {
+    myVar = setInterval(function () {
+        //alert("hello");
+        goNext1();
+        console.log("counttt "+count);
+    },parseInt(2000,10));
+}
+
+function myStopFunction() {
+    clearTimeout(myVar);
+}*/
 
 

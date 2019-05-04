@@ -191,3 +191,26 @@ pre{
     padding: 2px;
     text-align: center;
 }
+#timer{
+    display: block;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+.btn{
+    width: 20%;
+    height: 35px;
+    cursor: pointer;
+    color: darkred;
+}
+.btn:hover{
+    color: #1d6c18;
+    font-style: italic;
+}
+input{
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#listBox{
+    text-align: center;
+}

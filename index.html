@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Brunch</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
      <div id="wrapper">
@@ -16,7 +17,18 @@
 
          </div>
          <div class="box" id="b3">
-
+              <div id="timer">
+                  <button class="btn" id="start">Start</button>
+                  <input id="listBox" type="text" list="lan">
+                  <datalist id="lan">
+                      <option class="timeList" value="1000 MilliSeconds">
+                      <option class="timeList" value="2000 MilliSeconds">
+                      <option class="timeList" value="3000 MilliSeconds">
+                      <option class="timeList" value="4000 MilliSeconds">
+                      <option class="timeList" value="5000 MilliSeconds">
+                  </datalist>
+                  <button class="btn" id="stop">Stop</button>
+              </div>
          </div>
          <div class="box" id="b4">
                 <button id="btnF" type="button">Forward >></button>
