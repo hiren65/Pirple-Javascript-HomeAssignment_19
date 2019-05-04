@@ -207,6 +207,7 @@ function reverse() {
         count = arr.length;
     }
     count--;
+    slideNumber.innerHTML = `${count} `;
     console.log(count);
     slider.innerHTML = arr[count];
     if (count>2){
