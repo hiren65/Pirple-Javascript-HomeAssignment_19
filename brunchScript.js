@@ -122,7 +122,7 @@ sld5 = `
           <div id="next" >Next</div>  
        `;
 sld6 = `
-          <h2 class="slideTitle">What is the dish made of?</h2>
+          <h2 class="slideTitle">What is ready in the Brunch Platter?</h2>
           <div class="inner">
                <h3>The app is there, let's take a quick look into the project's structure</h3>
                <code class="cod">

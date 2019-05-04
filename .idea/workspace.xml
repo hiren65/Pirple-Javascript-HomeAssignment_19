@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c13ac1cf-142a-4f9e-98b5-a5b7e2601d56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/brunchScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/brunchScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brunchScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="209" column="40" selection-start-line="209" selection-start-column="40" selection-end-line="209" selection-end-column="40" />
+            <state relative-caret-position="121">
+              <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
               <folding>
                 <element signature="e#788#794#0" expanded="true" />
                 <element signature="e#795#801#0" expanded="true" />
@@ -41,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -125,12 +126,12 @@
       <workItem from="1556712296606" duration="4000" />
       <workItem from="1556789155857" duration="8719000" />
       <workItem from="1556938886104" duration="1398000" />
-      <workItem from="1556945620249" duration="9534000" />
+      <workItem from="1556945620249" duration="10125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32522000" />
+    <option name="totallyTimeSpent" value="33113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="354" y="44" width="1471" height="808" extended-state="0" />
@@ -208,14 +209,14 @@
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/brunchScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="209" column="40" selection-start-line="209" selection-start-column="40" selection-end-line="209" selection-end-column="40" />
+        <state relative-caret-position="121">
+          <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
           <folding>
             <element signature="e#788#794#0" expanded="true" />
             <element signature="e#795#801#0" expanded="true" />
