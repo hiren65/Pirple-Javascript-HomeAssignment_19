@@ -91,6 +91,7 @@ h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 800;
 
 }
 #btnR{
@@ -107,6 +108,7 @@ h2{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 800;
 }
 p{
     font-size: 1.4rem;
