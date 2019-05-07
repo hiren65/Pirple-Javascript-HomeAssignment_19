@@ -25,6 +25,31 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
 }
+#head1{
+    width: 80%;
+    //border: 1px solid black;
+    height: 100%;
+    display: inline-block;
+
+}
+#head2{
+    width: 18%;
+    height: 96%;
+    background-color: black;
+    display: inline-block;
+    //margin-right: 0;
+    float: right;
+    background-image: url("img/ncapsulate-grunt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 16px;
+ }
+#head2:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 h1{
     text-align: center;
     color: green;
@@ -35,15 +60,40 @@ h2{
     text-align: center;
     color: darkseagreen;
 }
+#noArrow{
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+#arrow{
+    display: inline-block;
+
+    height: 90%;
+    float: right;
+    margin: 10px;
+    //border: 1px solid black;
+    width: 15%;
+    //background-color: #d7e9cc;
+    //background-image: url('img/red-arrow.jpg');
+}
+img{
+    //background-color: #d7e9cc;
+    width: 100%;
+    height: 100%;
+    //background: #6DB3F2 url('img/red-arrow.jpg');
+}
 #b2{
     position: relative;
     width: 60%;
-    min-height: 450px;
+    min-height: 490px;
     background-color: gold;
     display: block;
     margin: 0 auto 0 auto;
     grid-column: 1/2;
     grid-row: 2/3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #b3{
     width: 100%;
@@ -62,6 +112,7 @@ h2{
     margin-right: auto;
     margin-left: 9%;
     display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 #b5{
@@ -72,6 +123,7 @@ h2{
     grid-row: 2/3;
     margin-right: 9%;
     margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #sl0{
     font-size: 1.5rem;
