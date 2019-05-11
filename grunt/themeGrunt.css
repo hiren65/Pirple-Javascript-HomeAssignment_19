@@ -8,7 +8,7 @@ body{
 #wrapper{
     display: grid;
     grid-template-columns: 20%  70% 10%;
-    grid-auto-rows: 140px auto auto;
+    grid-auto-rows: auto auto auto;
     //grid-gap: 1%;
     background-color: whitesmoke;
     border: 1px solid black;
@@ -54,6 +54,7 @@ h2{
     text-align: center;
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px red;
+    margin-bottom: 5px;
 }
 #b3{
     width: 100%;
@@ -127,6 +128,9 @@ p{
     font-family: Georgia, serif;
     font-weight: 400;
 }
+.compare:hover{
+    color: darkgreen;
+}
 h3{
     text-align: center;
     font-size: 1.2rem;
@@ -146,7 +150,7 @@ code{
     color: black;
 }
 pre{
-    background-color: lightcyan;
+    background-color: linen;
     display: block;
     margin: 5px auto 5px auto;
     width: 70%;
@@ -158,6 +162,7 @@ pre{
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;
+    margin-top: 10px;
 }
 em{
     color: red;
@@ -166,4 +171,28 @@ label{
     font-size: 1.44rem;
     color: black;
     text-emphasis: black;
+}
+li{
+    font-size: 1.22rem;
+}
+#no{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.22rem;
+    color: linen;
+    background-color: black;
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    padding: 5px;
+}
+.myCode{
+    display: block;
+    font-size: 1.22rem;
+    margin: 10px;
+    background-color: linen;
+    padding: 5px;
 }
