@@ -528,7 +528,8 @@ function evokeCompareListener() {
     for(let i=0;i<compare.length;i++){
 
         compare[i].addEventListener("click",compareFunction);
-
+        compare[i].addEventListener("mouseover",compareFunction1);
+        compare[i].addEventListener("mouseout",compareFunction11);
         function compareFunction() {
             colorChangeForCompare();
             let tt = 10 + i ;
@@ -543,6 +544,12 @@ function evokeCompareListener() {
             compare[i].style.width = "100%";
             compare[i].style.border = "1px solid rgba(120,120,120,0.33)";
 
+        }
+        function compareFunction1(){
+            compare[i].style.color = "green";
+        }
+        function compareFunction11(){
+            compare[i].style.color = "#F4A460";
         }
     }
 }
