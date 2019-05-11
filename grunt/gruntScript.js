@@ -343,27 +343,138 @@ sld12 = `
             <li>Updating databases</li>
             </ul>
             </p>
+            <p>
+            Things like maintaining WordPress themes, batch renaming files, adding attributes to 
+            XML-based documents and comparing source and destination files are all tasks that can be 
+            handled by either of these tools
+            </p>
             </div>
         `;
 sld13 = `
-            <h1 class="sldH1">Custom tasks</h1>   
+            <h1 class="sldH1">What Are The Major Differences?</h1>   
             <div class="sldDiv">
             <p>
-            
+            While both tools can perform many of the same tasks, the major differences when comparing 
+            Grunt vs Gulp are how they accomplish them. The first significant difference is that Gulp 
+            has been designed to use a series of plugins that each do a task. Each plugin for Gulp is 
+            written with the goal of doing one thing very well.
+            </p>
+            <p>
+            Grunt, on the other hand, uses plugins that often accomplish multiple tasks at the same 
+            time. This means that the plugin creation process is very different depending on which 
+            tool you’re using. Additionally, at the time of writing this article, the Grunt plugin 
+            registry contained 6,013 plugins, a considerable amount more than Gulp.
+            </p>
+            <p>
+            Another difference is that Grunt uses data configuration files that are similar to JSON, 
+            whereas Gulp employs JavaScript, which tends to be easier to write. Gulp code is often 
+            much shorter than Grunt code, and part of this is because you have to declare source and 
+            destination files for every task in Grunt. That said, once you’ve set up your automated 
+            processes, this may not be a big issue for you either way.
+            </p>
+            <p>
+            However, if you’re working on a large project, Grunt code length may start to become a 
+            headache. Once a build flow has been used for a while, it may get longer and more 
+            complicated. This can make it difficult to add new tasks without either duplicating 
+            something that’s already being done or putting a task in the correct order. Making the 
+            order of operations confusion worse, is the fact that tasks are configured declaratively 
+            in Grunt. This can be attenuated by ensuring that individuals working on automation tasks 
+            keep things clear and split up tasks before they become overly complex.
+            </p>
+            <p>
+            Both systems allow you to automatically run tasks when files are added to a directory or 
+            when charges are made to the files in a directory, but you’re required to install and run 
+            the watch plugin for this feature to operate in Grunt. Gulp has built-in processes for 
+            watching data files. While many don’t consider this to be an issue since the results are 
+            the same, some users find the lack of an innate file watcher in Grunt to be a drawback.
             </p>
             </div>
         `;
 sld14 = `
-            <h1 class="sldH1">Custom tasks</h1>   
+            <h1 class="sldH1">Speed</h1>   
+            <div class="sldDiv">
+            <p>
+            Gulp has a major advantage when it comes to speed, but the advantage may not be that 
+            significant, and updates to Grunt have done a lot to reduce the speed difference. The 
+            reason for Gulp’s current speed advantage is down to the fact that Gulp uses streams and 
+            handles tasks in memory, which means that only one file is written. Furthermore, Gulp can 
+            process several tasks at the same time, but Grunt will normally only handle one task at a 
+            time.<br>
+            Unless you’re involved in a large project, the output time for either Gulp or Grunt is 
+            going to be measured in seconds or even milliseconds. Even assuming that Grunt takes 500 ms 
+            to complete a task that can be completed in 50 ms by Gulp, a tenfold difference, you’re 
+            still talking about half a second for the much longer Grunt time frame. The size of the 
+            project you’re working on is going to determine whether speed is an issue when looking at 
+            Gulp vs Grunt.
+            </p>
+            </div>
         `;
 sld15 = `
-            <h1 class="sldH1">Custom tasks</h1>   
+            <h1 class="sldH1">Similarity</h1> 
+            <div class="sldDiv">
+            <p>
+            For instance, let’s say you set up a process that compresses jpg files in the images 
+            directory. Once you run the process, all images have EXIF data removed from them and are 
+            compressed. Once you have Gulp or Grunt properly installed and configured, the image 
+            compression task code for each tool would look similar to the following:
+            </p>
+            <h2 class="sldH2">Gulp</h2>
+            <pre>
+    gulp.task('jpgs', function() {
+    return gulp.src('src/images/*.jpg')
+        .pipe(imagemin({ progressive: true }))
+        .pipe(gulp.dest('optimized_images'));
+    });
+            </pre>
+            <h2 class="sldH2">Grunt</h2>
+            <pre>
+    imagemin: {
+    jpgs: {
+        options: {
+        progressive: true
+        },
+            files: [{
+                expand: true,
+                cwd: 'src/img',
+                src: ['*.jpg'],
+                dest: 'images/'
+            }]
+        }
+    }        
+            </pre>
+            </div>  
         `;
 sld16 = `
-            <h1 class="sldH1">Custom tasks</h1> 
+            <h1 class="sldH1">Coding vs Configuration</h1> 
+            <div class="sldDiv">
+            <p>
+            There’s a lot of talk about the major differences between Gulp and Grunt coming down to 
+            configuration versus coding. Gulp is designed to allow you to use single purpose plugins 
+            and code to achieve your goals. This makes the creation of plugins for Gulp much easier, 
+            in most cases, than developing them for Grunt. Additionally, since Gulp is more about 
+            coding and single task plugins, configuring plugins in Gulp is a much more standardized 
+            process compared to doing so for Grunt plug-ins.
+            </p>
+            <p>
+            However, the issue may be less about coding versus configuration and how comfortable you 
+            and, if you have one, your team are with node streams. Gulp relies heavily on node streams, 
+            and unless you and everyone working expected to work with Gulp are familiar with them, as 
+            well as pipes, buffers and asynchronous JavaScript, you’re going to find dealing with Gulp 
+            an uphill and against the wind task.
+            </p>
+            <p>
+            While configuring Grunt may be a longer process than configuring Gulp, Grunt is much 
+            friendlier to a larger number of users since it does rely more on configuration than code. 
+            Furthermore, while Gulp is easier to read, many feel that Grunt code is easier to write. 
+            If you’re working with a team with a large number of people with a variety of skill sets, 
+            Grunt may be a better bet. All you need to do in order to use it is to read the 
+            documentation, obtain and configure the plugins you need, and generate some JavaScript 
+            code
+            </p>
+            </div>
         `;
 let sldNo = document.querySelector("#no");
-arr = [sld1,sld2,sld3,sld4,sld5,sld6,sld7,sld8,sld9,sld10,sld11,sld12];
+arr = [sld1,sld2,sld3,sld4,sld5,sld6,sld7,sld8,sld9,sld10,sld11,sld12,sld13,sld14,sld15,sld16];
 let next = document.querySelector("#btn1");
 next.addEventListener("click",sliderG);
 function sliderG() {
@@ -406,23 +517,32 @@ function colorChangeForCompare() {
     for(let i=0;i<compare.length;i++){
 
         compare[i].style.color = "sandybrown";
+        compare[i].style.backgroundColor = "#F5F5F5";
+        compare[i].style.border = "0px";
     }
 
 }
 
 function evokeCompareListener() {
+
     for(let i=0;i<compare.length;i++){
 
         compare[i].addEventListener("click",compareFunction);
+
         function compareFunction() {
+            colorChangeForCompare();
             let tt = 10 + i ;
             //if (i === 0){
                 b3.innerHTML = arr[tt];
             //}
-            alert( arr.length + "and "+tt);
+            //alert( arr.length + "and "+tt);
             count = tt;
             sldNo.innerText = "Slide "+ count ;
             compare[i].style.color = "gray";//sandybrown
+            compare[i].style.backgroundColor = "#ffffff";
+            compare[i].style.width = "100%";
+            compare[i].style.border = "1px solid rgba(120,120,120,0.33)";
+
         }
     }
 }
