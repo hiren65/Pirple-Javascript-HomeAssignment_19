@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c13ac1cf-142a-4f9e-98b5-a5b7e2601d56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brunchScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/brunchScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grunt/gruntScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/grunt/gruntScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grunt/themeGrunt.css" beforeDir="false" afterPath="$PROJECT_DIR$/grunt/themeGrunt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="c13ac1cf-142a-4f9e-98b5-a5b7e2601d56" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -32,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brunchScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="204" lean-forward="true" selection-start-line="204" selection-end-line="204" />
+            <state relative-caret-position="195">
+              <caret line="192" column="30" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -159,16 +152,15 @@
       <workItem from="1557575499050" duration="416000" />
       <workItem from="1557575949340" duration="2703000" />
       <workItem from="1557635374978" duration="1690000" />
-      <workItem from="1557645583957" duration="2695000" />
+      <workItem from="1557645583957" duration="3635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110640000" />
+    <option name="totallyTimeSpent" value="111580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="151" y="87" width="1557" height="808" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10533246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -283,8 +275,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brunchScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="204" lean-forward="true" selection-start-line="204" selection-end-line="204" />
+        <state relative-caret-position="195">
+          <caret line="192" column="30" selection-start-line="192" selection-start-column="30" selection-end-line="192" selection-end-column="70" />
         </state>
       </provider>
     </entry>
