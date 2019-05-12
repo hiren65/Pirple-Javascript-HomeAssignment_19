@@ -2,8 +2,8 @@
 let setT = 0;
 let slider = document.getElementById("b2");
 var internalID;
-let sld1,sld2,sld3,sld0,sld4,sld5,sld6,sld7;
-arr = [sld1,sld2,sld3,sld4,sld5,sld6,sld7];
+let sld1,sld2,sld3,sld0,sld4,sld5,sld6,sld7,sld8;
+arr = [sld1,sld2,sld3,sld4,sld5,sld6,sld7,sld8];
 let count = 0;
 sld0 = `
                      <h2 id="sl0"> Why uses Brunch?</h2>
@@ -183,9 +183,29 @@ sld7 = `
           
           <div id="next" >Next</div> 
        `;
+sld8 = `
+            <h2 class="slideTitle">Vedio Casting</h2>
+            <div class="inner inner1">
+                 <!--<video id="cast" width="320" height="240"  controls>
+                 <source src="https://vimeo.com/user97655479/review/335663887/54ae64563a" type="video/mp4">
+                 Your browser does not support the video tag.
+                 </video>-->
+                 <iframe src="https://player.vimeo.com/video/335663887" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>     
+       `;
+
+let link = document.getElementById("vedioLink");
+link.addEventListener("click",linkToVedio);
+function linkToVedio(){
+    //alert();
+    count = 8;
+    slideNumber.innerHTML = `${count} `;
+    slider.innerHTML = arr[count];
+}
+
 
 slider.innerHTML = sld0;
-arr = [sld0,sld1,sld2,sld3,sld4,sld5,sld6,sld7];
+arr = [sld0,sld1,sld2,sld3,sld4,sld5,sld6,sld7,sld8];
 let slideNumber = document.getElementById("slideNumber");
 
 

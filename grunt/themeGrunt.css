@@ -131,6 +131,9 @@ p{
 .compare:hover{
     color: darkgreen;
 }
+.compare:after{
+    color: sandybrown;
+}
 h3{
     text-align: center;
     font-size: 1.2rem;

@@ -519,6 +519,7 @@ function colorChangeForCompare() {
         compare[i].style.color = "sandybrown";
         compare[i].style.backgroundColor = "#F5F5F5";
         compare[i].style.border = "0px";
+        //compare[i].style.color = "green";
     }
 
 }
@@ -527,10 +528,10 @@ function evokeCompareListener() {
 
     for(let i=0;i<compare.length;i++){
 
-        compare[i].addEventListener("click",compareFunction);
+        compare[i].addEventListener("mousedown",compareFunction);
         compare[i].addEventListener("mouseover",compareFunction1);
         compare[i].addEventListener("mouseout",compareFunction11);
-        function compareFunction() {
+        function compareFunction(e) {
             colorChangeForCompare();
             let tt = 10 + i ;
             //if (i === 0){
@@ -539,17 +540,18 @@ function evokeCompareListener() {
             //alert( arr.length + "and "+tt);
             count = tt;
             sldNo.innerText = "Slide "+ count ;
-            compare[i].style.color = "gray";//sandybrown
-            compare[i].style.backgroundColor = "#ffffff";
-            compare[i].style.width = "100%";
-            compare[i].style.border = "1px solid rgba(120,120,120,0.33)";
+            e.target.style.color = "gray";//sandybrown
+
+            e.target.style.backgroundColor = "#ffffff";
+            e.target.style.width = "100%";
+            e.target.style.border = "1px solid rgba(120,120,120,0.33)";
 
         }
-        function compareFunction1(){
-            compare[i].style.color = "green";
+        function compareFunction1(e){
+            e.target.style.color = "green";
         }
-        function compareFunction11(){
-            compare[i].style.color = "#F4A460";
+        function compareFunction11(e){
+            e.target.style.color = "#F4A460";
         }
     }
 }
